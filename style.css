@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg,rgb(249, 89, 89),rgb(96, 96, 255),rgb(247, 83, 247));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calendar{
+    width: 350px;
+    height: 300px;
+    background: #fff;
+    border-radius: 10px;
+    border: 2px solid #1d0000;
+    align-items: center;
+    display: flex;
+}
+.left, .right{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-direction: column;
+}
+.right{
+    width: 50%;
+    background-color: rgb(249, 77, 123);
+    border-radius: 0px 6px 6px 0px;
+}
+.left{
+    border-radius: 6px 0px 0px 6px;
+    width: 50%;
+    background: linear-gradient( 45deg, rgb(241, 241, 248),rgb(110, 179, 226));
+}
+#date{
+    font-size:90px;
+    line-height: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#year{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+@media (max-width:400px) {
+  
+    /* .left,.right{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        flex-direction: column;
+    }
+    
+    .calendar{
+        width: 300px;
+        height: 250px;
+     } */
+    .rigth{
+        width: 50%;
+    }
+    .left{
+        width: 50%;
+    } 
+    #date{
+        font-size: 80px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    #year{
+        font-size: 30px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+}
+@media (max-width:310px) {
+      .left,.right{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;  
+          flex-direction: column;
+    } 
+    #date{
+        font-size: 40px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    
+    .calendar{
+        width: 300px;
+        height: 250px;
+     }
+    .rigth{
+        width: 50%;
+    }
+    .left{
+        width: 50%;
+    } 
+}
